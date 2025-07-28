@@ -1,0 +1,22 @@
+<section id="quiz-section">
+  <h2>Simple Math Quiz</h2>
+  <p>What is 3 + 5?</p>
+  <button onclick="checkAnswer(8)">8</button>
+  <button onclick="checkAnswer(9)">9</button>
+  <button onclick="checkAnswer(7)">7</button>
+  <p id="quiz-result"></p>
+</section>
+
+<script>
+  function checkAnswer(answer) {
+    const result = document.getElementById("quiz-result");
+    if (answer === 8) {
+      result.textContent = "✅ Correct!";
+      result.style.color = "green";
+    } else {
+      result.textContent = "❌ Try Again!";
+      result.style.color = "red";
+    }
+  }
+</script>
+

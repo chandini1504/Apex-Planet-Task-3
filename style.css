@@ -1,0 +1,56 @@
+/* Base styles for desktop */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header, footer {
+  background: #0066cc;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.box {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  width: 40%;
+  text-align: center;
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .box {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header, footer {
+    font-size: 16px;
+  }
+}
+
+
+
